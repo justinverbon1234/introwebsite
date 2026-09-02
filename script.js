@@ -25,3 +25,26 @@ if (revealItems.length) {
         });
     }
 }
+
+
+/* Journal interaction */
+
+const journalItems = document.querySelectorAll('.journal-item');
+
+journalItems.forEach((item) => {
+    const toggle = item.querySelector('.journal-toggle');
+
+    toggle.addEventListener('click', () => {
+        journalItems.forEach((journalItem) => {
+            journalItem.classList.remove('active');
+
+            const journalToggle =
+                journalItem.querySelector('.journal-toggle');
+
+            journalToggle.setAttribute('aria-expanded', 'false');
+        });
+
+        item.classList.add('active');
+        toggle.setAttribute('aria-expanded', 'true');
+    });
+});
