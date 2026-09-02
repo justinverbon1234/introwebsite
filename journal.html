@@ -5,6 +5,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
+    <meta
+        name="description"
+        content="The journal of Justin Verbon, featuring articles, projects, thoughts, and experiments."
+    >
+
     <title>Journal - Justin Verbon</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -18,11 +23,17 @@
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/layout.css">
+    <link rel="stylesheet" href="styles/journal/archive.css">
 </head>
 
 <body>
 
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
     <header class="site-header">
+
         <nav class="navbar" aria-label="Main navigation">
 
             <a
@@ -34,16 +45,213 @@
             </a>
 
             <ul class="nav-links">
-                <li><a href="index.html#home">Home</a></li>
-                <li><a href="index.html#about">Justin</a></li>
-                <li><a href="index.html#journal">Journal</a></li>
-                <li><a href="index.html#contact">Contact</a></li>
+                <li>
+                    <a href="index.html#home">Home</a>
+                </li>
+
+                <li>
+                    <a href="index.html#about">Justin</a>
+                </li>
+
+                <li>
+                    <a href="journal.html" aria-current="page">
+                        Journal
+                    </a>
+                </li>
+
+                <li>
+                    <a href="index.html#contact">Contact</a>
+                </li>
             </ul>
 
         </nav>
+
     </header>
 
-    <main>
+
+    <main id="main-content">
+
+        <section
+            class="archive-hero"
+            aria-labelledby="journal-title"
+        >
+
+            <div class="archive-meta">
+                <p>Archive / Vol. 03</p>
+                <p>2026</p>
+            </div>
+
+
+            <div class="archive-title">
+
+                <p>
+                    Notes from the studio
+                </p>
+
+                <h1 id="journal-title">
+                    Journal
+                </h1>
+
+            </div>
+
+
+            <div class="archive-intro">
+
+                <p>
+                    A growing collection of projects, ideas, thoughts, and
+                    experiments around the things I am making, learning,
+                    and interested in.
+                </p>
+
+                <p>
+                    03 Entries
+                </p>
+
+            </div>
+
+        </section>
+
+
+        <section
+            class="archive"
+            aria-labelledby="archive-title"
+        >
+
+            <header class="archive-header">
+
+                <div>
+
+                    <p class="archive-label">
+                        Index
+                    </p>
+
+                    <h2 id="archive-title">
+                        All Entries
+                    </h2>
+
+                </div>
+
+                <p>
+                    Latest / 2026
+                </p>
+
+            </header>
+
+
+            <div class="archive-list">
+
+                <article class="archive-entry">
+
+                    <a href="journal/editorial-design.html">
+
+                        <span class="archive-number">
+                            01
+                        </span>
+
+                        <span class="archive-category">
+                            Article
+                        </span>
+
+                        <h3>
+                            Why I Keep Coming Back to Editorial Design
+                        </h3>
+
+                        <time datetime="2026-09-02">
+                            02.09.26
+                        </time>
+
+                        <span
+                            class="archive-arrow"
+                            aria-hidden="true"
+                        >
+                            ↗
+                        </span>
+
+                    </a>
+
+                </article>
+
+
+                <article class="archive-entry">
+
+                    <a href="journal/personal-website.html">
+
+                        <span class="archive-number">
+                            02
+                        </span>
+
+                        <span class="archive-category">
+                            Project
+                        </span>
+
+                        <h3>
+                            Building My Personal Website
+                        </h3>
+
+                        <time datetime="2026-08-27">
+                            27.08.26
+                        </time>
+
+                        <span
+                            class="archive-arrow"
+                            aria-hidden="true"
+                        >
+                            ↗
+                        </span>
+
+                    </a>
+
+                </article>
+
+
+                <article class="archive-entry">
+
+                    <a href="journal/art-fashion-tech.html">
+
+                        <span class="archive-number">
+                            03
+                        </span>
+
+                        <span class="archive-category">
+                            Thought
+                        </span>
+
+                        <h3>
+                            Where Art, Fashion and Technology Meet
+                        </h3>
+
+                        <time datetime="2026-08-20">
+                            20.08.26
+                        </time>
+
+                        <span
+                            class="archive-arrow"
+                            aria-hidden="true"
+                        >
+                            ↗
+                        </span>
+
+                    </a>
+
+                </article>
+
+            </div>
+
+
+            <footer class="archive-footer">
+
+                <p>
+                    End of Index
+                </p>
+
+                <p>
+                    Justin Verbon / 2026
+                </p>
+
+            </footer>
+
+        </section>
+
     </main>
 
 </body>

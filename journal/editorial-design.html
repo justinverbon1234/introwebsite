@@ -5,7 +5,12 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Editorial Design - Justin Verbon</title>
+    <meta
+        name="description"
+        content="Justin Verbon explores why editorial design continues to influence his approach to digital design, typography, fashion, and visual culture."
+    >
+
+    <title>Why I Keep Coming Back to Editorial Design - Justin Verbon</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,9 +23,14 @@
     <link rel="stylesheet" href="../styles/base.css">
     <link rel="stylesheet" href="../styles/components.css">
     <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/journal/entry.css">
 </head>
 
 <body>
+
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
 
     <header class="site-header">
         <nav class="navbar" aria-label="Main navigation">
@@ -36,29 +46,153 @@
             <ul class="nav-links">
                 <li><a href="../index.html#home">Home</a></li>
                 <li><a href="../index.html#about">Justin</a></li>
-                <li><a href="../journal.html">Journal</a></li>
+                <li><a href="../index.html#journal">Journal</a></li>
                 <li><a href="../index.html#contact">Contact</a></li>
             </ul>
 
         </nav>
     </header>
 
-    <main>
-        <section style="padding: 4rem 1rem;">
-            <p>Article / 01</p>
+    <main id="main-content">
 
-            <h1>
-                Why I Keep Coming Back to Editorial Design
-            </h1>
+        <article
+            class="entry"
+            aria-labelledby="entry-title"
+        >
 
-            <p>
-                If you can see this page, the journal link is working correctly.
-            </p>
+            <header class="entry-hero">
 
-            <a href="../index.html#journal">
-                Back to Journal
-            </a>
-        </section>
+                <div class="entry-topline">
+                    <p>Article / 01</p>
+
+                    <time datetime="2026-09-02">
+                        02.09.26
+                    </time>
+                </div>
+
+                <div class="entry-heading">
+
+                    <p class="entry-eyebrow">
+                        Notes on design
+                    </p>
+
+                    <h1 id="entry-title">
+                        Why I Keep Coming Back to Editorial Design
+                    </h1>
+
+                </div>
+
+                <div class="entry-intro">
+
+                    <p>
+                        Exploring the relationship between editorial design,
+                        typography, fashion, and the way those ideas can shape
+                        digital experiences.
+                    </p>
+
+                    <div class="entry-details">
+                        <span>Written by Justin Verbon</span>
+                        <span>5 min read</span>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <div class="entry-body">
+
+                <p class="entry-lead">
+                    I keep finding myself drawn back to editorial design.
+                    There is something about the way magazines combine
+                    typography, imagery, spacing, and structure that feels
+                    both expressive and incredibly deliberate.
+                </p>
+
+
+                <div class="entry-copy">
+
+                    <p>
+                        What interests me most is that editorial design does
+                        not always try to make everything perfectly balanced
+                        or predictable. A layout can feel slightly awkward,
+                        oversized, asymmetrical, or even unfinished, while
+                        still feeling completely intentional.
+                    </p>
+
+                    <p>
+                        That is something I want to explore more in digital
+                        design. Websites do not always need to look like a
+                        collection of cards, buttons, and perfectly aligned
+                        components. They can borrow ideas from magazines,
+                        fashion, photography, and print.
+                    </p>
+
+                    <blockquote>
+                        Good design does not always need to feel perfect.
+                        Sometimes it just needs to feel considered.
+                    </blockquote>
+
+                    <p>
+                        This website has become one of the places where I can
+                        experiment with that idea. I can treat typography as
+                        part of the composition, use negative space more
+                        deliberately, and let different sections have their
+                        own rhythm while still belonging to the same visual
+                        system.
+                    </p>
+
+                    <p>
+                        I am still figuring out exactly what my own approach
+                        looks like, which is probably the part I enjoy most.
+                        The point is not to copy traditional editorial design,
+                        but to understand what makes it interesting and see
+                        how those ideas can translate into something digital.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <footer class="entry-footer">
+
+                <div class="entry-footer-meta">
+                    <p>End of Entry</p>
+                    <p>Article / 01</p>
+                </div>
+
+                <nav
+                    class="entry-navigation"
+                    aria-label="Journal entry navigation"
+                >
+
+                    <a
+                        class="entry-back"
+                        href="../index.html#journal"
+                    >
+                        <span aria-hidden="true">←</span>
+                        Back to Journal
+                    </a>
+
+                    <a
+                        class="entry-next"
+                        href="personal-website.html"
+                    >
+                        <span>
+                            Next Entry
+                            <small>Building My Personal Website</small>
+                        </span>
+
+                        <span aria-hidden="true">→</span>
+                    </a>
+
+                </nav>
+
+            </footer>
+
+        </article>
+
     </main>
 
 </body>
