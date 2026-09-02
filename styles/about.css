@@ -1,0 +1,116 @@
+.justin,
+.journal,
+.contact {
+    min-height: 100vh;
+    padding: 2rem 1rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.justin-layout {
+    display: grid;
+    grid-template-columns: 1.1fr 0.9fr;
+    align-items: center;
+    gap: 3rem;
+    width: min(1100px, 100%);
+    margin: 0 auto;
+    flex: 1;
+}
+
+.justin-content {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.justin-intro {
+    max-width: 560px;
+}
+
+.eyebrow {
+    margin: 0 0 1rem;
+    font-size: 0.72rem;
+    letter-spacing: 0.14em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+}
+
+.justin-quote {
+    margin: 0 0 1.25rem;
+    font-size: clamp(1.4rem, 2vw, 2.1rem);
+    line-height: 1.3;
+    color: var(--text);
+    font-weight: 500;
+}
+
+.justin-intro p:not(.eyebrow):not(.justin-quote) {
+    margin: 0;
+    font-size: 1rem;
+    line-height: 1.8;
+    color: var(--text-muted);
+}
+
+.justin-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 0.8rem;
+    margin-top: 1.5rem;
+}
+
+.justin-meta span {
+    font-size: 0.7rem;
+    letter-spacing: 0.12em;
+    text-transform: uppercase;
+    color: var(--text-muted);
+    border: 1px solid var(--border);
+    border-radius: var(--radius-full);
+    padding: 0.45rem 0.7rem;
+}
+
+.justin-visual {
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+
+.justin-visual::before {
+    content: "";
+    position: absolute;
+    width: 72px;
+    height: 1px;
+    background: var(--text);
+    left: -2rem;
+    top: 50%;
+    opacity: 0.7;
+}
+
+.justin-visual img {
+    width: min(420px, 100%);
+    height: 540px;
+    object-fit: cover;
+    border-radius: 1.25rem 1.25rem 1.25rem 0.4rem;
+    box-shadow: 0 20px 40px rgba(23, 23, 21, 0.08);
+    filter: grayscale(100%) contrast(1.05) sepia(0.12);
+    border: 1px solid var(--border);
+    transform: translateX(0.5rem);
+    transition: transform 500ms ease, filter 500ms ease, box-shadow 500ms ease;
+}
+
+.justin-visual img:hover {
+    transform: translateX(0.5rem) scale(1.02);
+    filter: grayscale(80%) contrast(1.08) sepia(0.08);
+    box-shadow: 0 24px 50px rgba(23, 23, 21, 0.12);
+}
+
+@media (max-width: 768px) {
+    .justin-layout {
+        grid-template-columns: 1fr;
+        gap: 2rem;
+    }
+
+    .justin-visual::before {
+        display: none;
+    }
+}

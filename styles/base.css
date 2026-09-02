@@ -1,0 +1,43 @@
+:root {
+    --font-sans: "Inter", sans-serif;
+    --font-logo: "The Nautigal", cursive;
+    --background: #F3F0E9;
+    --background-alt: #EAE6DE;
+    --text: #171715;
+    --text-muted: #77736B;
+    --border: #D6D1C8;
+    --accent: #681F2A;
+
+    --transition-default: 300ms ease;
+    --transition-slow: 700ms ease;
+    --radius-default: 0.75rem;
+    --radius-full: 999px;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--text);
+    font-family: var(--font-sans);
+}
+
+section {
+    scroll-margin-top: 5rem;
+}
+
+img {
+    max-width: 100%;
+    display: block;
+}
+
+a {
+    color: inherit;
+}
