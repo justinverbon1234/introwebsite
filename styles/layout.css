@@ -1,3 +1,14 @@
+.about,
+.journal,
+.contact {
+    min-height: 100svh;
+    padding: 2rem 1rem;
+    border-top: 1px solid var(--border);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
 .section-header {
     display: flex;
     align-items: center;
@@ -9,16 +20,17 @@
     font-family: var(--font-logo);
     font-size: clamp(3rem, 10vw, 8rem);
     font-weight: 600;
+    line-height: 1;
     letter-spacing: -0.07em;
 }
 
 .section-footer {
     display: flex;
     justify-content: space-between;
+    margin-top: auto;
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    margin-top: auto;
 }
 
 .section-footer p {
@@ -26,11 +38,13 @@
 }
 
 @media (max-width: 768px) {
-    .navbar {
-        padding: 1rem;
+    .about,
+    .journal,
+    .contact {
+        padding: 1.5rem 1rem;
     }
 
-    .nav-links {
-        gap: 1rem;
+    .section-header h2 {
+        font-size: clamp(3rem, 16vw, 6rem);
     }
 }

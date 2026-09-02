@@ -1,7 +1,9 @@
 .reveal {
     opacity: 0;
     transform: translateY(28px);
-    transition: opacity var(--transition-slow), transform var(--transition-slow);
+    transition:
+        opacity var(--transition-slow),
+        transform var(--transition-slow);
 }
 
 .reveal.visible {
@@ -9,10 +11,13 @@
     transform: translateY(0);
 }
 
-.navbar {
+.site-header {
     position: sticky;
     top: 0;
     z-index: 20;
+}
+
+.navbar {
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -27,6 +32,7 @@
     color: var(--text);
     line-height: 1;
     letter-spacing: -0.06em;
+    text-decoration: none;
 }
 
 .nav-links {
@@ -39,13 +45,16 @@
 
 .nav-links a {
     position: relative;
+    display: inline-block;
     color: var(--text-muted);
     text-decoration: none;
     text-transform: uppercase;
     letter-spacing: 0.12em;
     font-size: 0.7rem;
     font-weight: 500;
-    transition: color var(--transition-default), transform var(--transition-default);
+    transition:
+        color var(--transition-default),
+        transform var(--transition-default);
 }
 
 .nav-links a:hover {
@@ -68,4 +77,30 @@
 
 .nav-links a:hover::after {
     transform: scaleX(1);
+}
+
+.brand:focus-visible,
+.nav-links a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .reveal {
+        opacity: 1;
+        transform: none;
+        transition: none;
+    }
+
+    .nav-links a {
+        transition: none;
+    }
+
+    .nav-links a:hover {
+        transform: none;
+    }
+
+    .nav-links a::after {
+        transition: none;
+    }
 }

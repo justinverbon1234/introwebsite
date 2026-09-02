@@ -1,10 +1,10 @@
 .hero {
-    min-height: calc(100vh - 70px);
-    padding: 2rem 1rem 1rem;
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
-    position: relative;
+    min-height: calc(100svh - 70px);
+    padding: 2rem 1rem 1rem;
 }
 
 .hero::before {
@@ -17,14 +17,14 @@
 
 .hero-meta,
 .hero-footer {
+    position: relative;
+    z-index: 1;
     display: flex;
     justify-content: space-between;
+    margin: 0;
     font-size: 0.75rem;
     text-transform: uppercase;
     letter-spacing: 0.08em;
-    position: relative;
-    z-index: 1;
-    margin: 0;
 }
 
 .hero-meta p,
@@ -41,31 +41,31 @@
 .hero-header::before {
     content: "digital designer";
     position: absolute;
-    left: 0;
     top: -2rem;
+    left: 0;
     font-size: 0.7rem;
-    letter-spacing: 0.18em;
-    text-transform: uppercase;
     color: var(--text-muted);
+    text-transform: uppercase;
+    letter-spacing: 0.18em;
 }
 
 .hero-title {
-    margin: 0;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
+    margin: 0;
     font-size: clamp(6rem, 18vw, 18rem);
     font-weight: 600;
-    letter-spacing: -0.07em;
     line-height: 0.75;
+    letter-spacing: -0.07em;
 }
 
 .hero-lastname {
+    margin-left: clamp(3rem, 12vw, 8rem);
     font-size: clamp(6rem, 16vw, 14rem);
     font-weight: 100;
-    letter-spacing: -0.10em;
     line-height: 0.75;
-    margin-left: clamp(3rem, 12vw, 8rem);
+    letter-spacing: -0.1em;
 }
 
 @media (max-width: 768px) {
@@ -74,6 +74,15 @@
     }
 
     .hero::before {
-        inset: 3rem 1rem 2rem 1rem;
+        inset: 3rem 1rem 2rem;
+    }
+
+    .hero-title {
+        font-size: clamp(4rem, 18vw, 8rem);
+    }
+
+    .hero-lastname {
+        margin-left: clamp(1rem, 8vw, 3rem);
+        font-size: clamp(4rem, 16vw, 7rem);
     }
 }

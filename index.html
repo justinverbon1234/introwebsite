@@ -1,15 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Justin Verbon – Digital Designer exploring art, fashion, and technology.">
 
-    <title>Justin Verbon – Designer</title>
+    <meta
+        name="description"
+        content="Justin Verbon - Digital Designer exploring art, fashion, and technology."
+    >
+
+    <title>Justin Verbon - Digital Designer</title>
 
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=The+Nautigal:wght@400;700&display=swap" rel="stylesheet">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=The+Nautigal:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
     <link rel="stylesheet" href="styles/base.css">
     <link rel="stylesheet" href="styles/components.css">
     <link rel="stylesheet" href="styles/layout.css">
@@ -17,81 +27,145 @@
     <link rel="stylesheet" href="styles/about.css">
     <link rel="stylesheet" href="styles/journal.css">
     <link rel="stylesheet" href="styles/contact.css">
+
+
     <script src="script.js" defer></script>
 </head>
 
 <body>
-    <nav class="navbar">
-        <div class="brand">JV</div>
-        <ul class="nav-links">
-            <li><a href="#home">Home</a></li>
-            <li><a href="#justin">Justin</a></li>
-            <li><a href="#journal">Journal</a></li>
-            <li><a href="#contact">Contact</a></li>
-        </ul>
-    </nav>
 
-    <main>
-        <section class="hero reveal" id="home">
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header class="site-header">
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a
+                class="brand"
+                href="#home"
+                aria-label="Justin Verbon - Home"
+            >
+                JV
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#about">Justin</a></li>
+                <li><a href="#journal">Journal</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+    </header>
+
+    <main id="main-content">
+
+        <section
+            class="hero reveal"
+            id="home"
+            aria-labelledby="hero-title"
+        >
+
             <div class="hero-meta">
                 <p>Digital Design</p>
                 <p>Amsterdam, 2026</p>
             </div>
 
             <div class="hero-header">
-                <h1 class="hero-title">
+
+                <h1 class="hero-title" id="hero-title">
                     <span>JUSTIN</span>
                     <span class="hero-lastname">VERBON</span>
                 </h1>
+
             </div>
 
-            <div class="hero-footer">
+            <footer class="hero-footer">
                 <p>Art / Fashion / Tech</p>
                 <p>Vol. 01</p>
-            </div>
+            </footer>
+
         </section>
 
-        <section class="justin reveal" id="justin">
+
+        <section
+            class="about reveal"
+            id="about"
+            aria-labelledby="about-title"
+        >
+
             <div class="section-header">
-                <h2>JV</h2>
+
+                <h2 id="about-title">
+                    <span aria-hidden="true">JV,</span>
+                    <span class="visually-hidden">
+                        Justin Verbon
+                    </span>
+                </h2>
+
             </div>
 
-            <div class="justin-layout">
-                <div class="justin-content">
-                    <div class="justin-intro">
-                        <p class="eyebrow">About Me</p>
-                        <p class="justin-quote">
-                            I am a 25 year old FDND student from Utrecht, exploring the world of art,
-                            fashion, and technology.
-                        </p>
-                        <p>
-                            My work is shaped by curiosity, creativity, and wanting to build things that
-                            feel expressive and thoughtful. I am constantly learning, making, and
-                            experimenting with the ways design can move through culture and technology.
+            <div class="about-layout">
+
+                <div class="about-content">
+
+                    <div class="about-intro">
+
+                        <p class="eyebrow">Who am I?</p>
+
+                        <p class="about-quote">
+                            I am a 25 year old FDND student from Utrecht,
+                            exploring the world of art, fashion, and technology.
                         </p>
 
-                        <div class="justin-meta">
+                        <p>
+                            I like exploring where design, art, fashion, and technology come together. 
+                            My work is driven by curiosity and experimentation, 
+                            always trying new ideas, learning as I go, and creating things that feel personal, expressive, and visually considered.
+                        </p>
+
+                        <div class="about-meta">
                             <span>Designer</span>
                             <span>Utrecht</span>
                             <span>Art / Fashion / Tech</span>
                         </div>
+
                     </div>
+
                 </div>
 
-                <div class="justin-visual">
-                    <img src="/images/IMG_4485.jpeg" alt="Portrait of Justin" width="840" height="1313" loading="lazy" decoding="async">
+                <div class="about-visual">
+
+                    <img
+                        src="images/IMG_4485.jpeg"
+                        alt="Portrait of Justin Verbon"
+                        width="840"
+                        height="1313"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
                 </div>
+
             </div>
 
             <footer class="section-footer">
                 <p>About Me</p>
                 <p>Vol. 02</p>
             </footer>
+
         </section>
 
-        <section class="journal reveal" id="journal">
+
+        <section
+            class="journal reveal"
+            id="journal"
+            aria-labelledby="journal-title"
+        >
+
             <div class="section-header">
-                <h2>Journal</h2>
+                <h2 id="journal-title">Journal</h2>
             </div>
 
             <div class="journal-intro">
@@ -99,46 +173,109 @@
             </div>
 
             <div class="journal-layout">
+
                 <article class="journal-entry featured">
+
                     <p class="entry-type">Articles</p>
-                    <h3>Dolor Sit Amet</h3>
-                    <p class="entry-date">Lorem Ipsum</p>
-                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat.</p>
+
+                    <h3>
+                        <a href="#">
+                            Dolor Sit Amet
+                        </a>
+                    </h3>
+
+                    <time class="entry-date" datetime="2026-09">
+                        September 2026
+                    </time>
+
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipiscing
+                        elit. Sed do eiusmod tempor incididunt ut labore et
+                        dolore magna aliqua.
+                    </p>
+
                 </article>
 
+
                 <article class="journal-entry">
+
                     <p class="entry-type">Projects</p>
-                    <h3>Adipiscing Elit</h3>
-                    <p class="entry-date">Lorem Ipsum</p>
-                    <p>Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident.</p>
+
+                    <h3>
+                        <a href="#">
+                            Adipiscing Elit
+                        </a>
+                    </h3>
+
+                    <time class="entry-date" datetime="2026-09">
+                        September 2026
+                    </time>
+
+                    <p>
+                        Duis aute irure dolor in reprehenderit in voluptate
+                        velit esse cillum dolore eu fugiat nulla pariatur.
+                    </p>
+
                 </article>
 
+
                 <article class="journal-entry">
+
                     <p class="entry-type">Thoughts</p>
-                    <h3>Ut Labore Dolore</h3>
-                    <p class="entry-date">Lorem Ipsum</p>
-                    <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis.</p>
+
+                    <h3>
+                        <a href="#">
+                            Ut Labore Dolore
+                        </a>
+                    </h3>
+
+                    <time class="entry-date" datetime="2026-09">
+                        September 2026
+                    </time>
+
+                    <p>
+                        Sed ut perspiciatis unde omnis iste natus error sit
+                        voluptatem accusantium doloremque laudantium.
+                    </p>
+
                 </article>
+
             </div>
 
             <footer class="section-footer">
                 <p>Thoughts & Updates</p>
                 <p>Vol. 03</p>
             </footer>
+
         </section>
 
-        <section class="contact reveal" id="contact">
+
+        <section
+            class="contact reveal"
+            id="contact"
+            aria-labelledby="contact-title"
+        >
+
             <div class="section-header">
-                <h2>Contact</h2>
+                <h2 id="contact-title">Contact</h2>
             </div>
 
             <div class="contact-content">
-                <p>I'd love to hear from you! Feel free to reach out for collaborations, inquiries, or just to say hello. Hugs and kisses xoxo.</p>
 
-                <div class="contact-info">
+                <p>
+                    I'd love to hear from you! Feel free to reach out for
+                    collaborations, inquiries, or just to say hello.
+                    Hugs and kisses xoxo.
+                </p>
+
+                <address class="contact-info">
+
                     <div class="contact-item">
                         <h3>Email</h3>
-                        <a href="mailto:verbon47@gmail.com">verbon47@gmail.com</a>
+
+                        <a href="mailto:verbon47@gmail.com">
+                            verbon47@gmail.com
+                        </a>
                     </div>
 
                     <div class="contact-item">
@@ -147,20 +284,52 @@
                     </div>
 
                     <div class="contact-item">
+
                         <h3>Social</h3>
+
                         <div class="social-links">
-                            <a href="https://www.instagram.com/justinverbon/" target="_blank" rel="noopener noreferrer">Instagram</a>
-                            <a href="https://linkedin.com" target="_blank" rel="noopener noreferrer">LinkedIn</a>
-                            <a href="https://twitter.com" target="_blank" rel="noopener noreferrer">Twitter</a>
+
+                            <a
+                                href="https://www.instagram.com/justinverbon/"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Instagram
+                            </a>
+
+                            <a
+                                href="https://linkedin.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                LinkedIn
+                            </a>
+
+                            <a
+                                href="https://twitter.com"
+                                target="_blank"
+                                rel="noopener noreferrer"
+                            >
+                                Twitter
+                            </a>
+
                         </div>
+
                     </div>
-                </div>
+
+                </address>
+
             </div>
 
             <footer class="section-footer">
                 <p>Get In Touch</p>
+                <p>Vol. 04</p>
             </footer>
+
         </section>
+
     </main>
+
 </body>
+
 </html>

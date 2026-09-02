@@ -1,4 +1,4 @@
-.justin,
+.about,
 .journal,
 .contact {
     min-height: 100vh;
@@ -9,7 +9,7 @@
     justify-content: space-between;
 }
 
-.justin-layout {
+.about-layout {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
     align-items: center;
@@ -19,13 +19,13 @@
     flex: 1;
 }
 
-.justin-content {
+.about-content {
     display: flex;
     align-items: center;
     justify-content: center;
 }
 
-.justin-intro {
+.about-intro {
     max-width: 560px;
 }
 
@@ -37,7 +37,7 @@
     color: var(--text-muted);
 }
 
-.justin-quote {
+.about-quote {
     margin: 0 0 1.25rem;
     font-size: clamp(1.4rem, 2vw, 2.1rem);
     line-height: 1.3;
@@ -45,21 +45,21 @@
     font-weight: 500;
 }
 
-.justin-intro p:not(.eyebrow):not(.justin-quote) {
+.about-intro p:not(.eyebrow):not(.about-quote) {
     margin: 0;
     font-size: 1rem;
     line-height: 1.8;
     color: var(--text-muted);
 }
 
-.justin-meta {
+.about-meta {
     display: flex;
     flex-wrap: wrap;
     gap: 0.8rem;
     margin-top: 1.5rem;
 }
 
-.justin-meta span {
+.about-meta span {
     font-size: 0.7rem;
     letter-spacing: 0.12em;
     text-transform: uppercase;
@@ -69,13 +69,13 @@
     padding: 0.45rem 0.7rem;
 }
 
-.justin-visual {
+.about-visual {
     display: flex;
     justify-content: center;
     position: relative;
 }
 
-.justin-visual::before {
+.about-visual::before {
     content: "";
     position: absolute;
     width: 72px;
@@ -86,7 +86,7 @@
     opacity: 0.7;
 }
 
-.justin-visual img {
+.about-visual img {
     width: min(420px, 100%);
     height: 540px;
     object-fit: cover;
@@ -95,22 +95,25 @@
     filter: grayscale(100%) contrast(1.05) sepia(0.12);
     border: 1px solid var(--border);
     transform: translateX(0.5rem);
-    transition: transform 500ms ease, filter 500ms ease, box-shadow 500ms ease;
+    transition:
+        transform 500ms ease,
+        filter 500ms ease,
+        box-shadow 500ms ease;
 }
 
-.justin-visual img:hover {
+.about-visual img:hover {
     transform: translateX(0.5rem) scale(1.02);
     filter: grayscale(80%) contrast(1.08) sepia(0.08);
     box-shadow: 0 24px 50px rgba(23, 23, 21, 0.12);
 }
 
 @media (max-width: 768px) {
-    .justin-layout {
+    .about-layout {
         grid-template-columns: 1fr;
         gap: 2rem;
     }
 
-    .justin-visual::before {
+    .about-visual::before {
         display: none;
     }
 }

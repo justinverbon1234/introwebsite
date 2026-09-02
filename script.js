@@ -1,22 +1,27 @@
-document.addEventListener('DOMContentLoaded', () => {
-    const revealItems = document.querySelectorAll('.reveal');
-    
-    if (!revealItems.length || !('IntersectionObserver' in window)) {
-        return;
-    }
+const revealItems = document.querySelectorAll('.reveal');
 
-    const revealObserver = new IntersectionObserver((entries) => {
-        entries.forEach((entry) => {
-            if (entry.isIntersecting) {
-                entry.target.classList.add('visible');
-                revealObserver.unobserve(entry.target);
-            }
+if (revealItems.length) {
+    if (!('IntersectionObserver' in window)) {
+        revealItems.forEach((item) => {
+            item.classList.add('visible');
         });
-    }, {
-        threshold: 0.15
-    });
+    } else {
+        const revealObserver = new IntersectionObserver(
+            (entries, observer) => {
+                entries.forEach((entry) => {
+                    if (entry.isIntersecting) {
+                        entry.target.classList.add('visible');
+                        observer.unobserve(entry.target);
+                    }
+                });
+            },
+            {
+                threshold: 0.15
+            }
+        );
 
-    revealItems.forEach((item) => {
-        revealObserver.observe(item);
-    });
-});
+        revealItems.forEach((item) => {
+            revealObserver.observe(item);
+        });
+    }
+}

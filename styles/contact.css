@@ -8,17 +8,18 @@
 }
 
 .contact-content > p {
+    max-width: 520px;
+    margin: 0 0 2rem;
     font-size: 1rem;
     line-height: 1.7;
     color: var(--text-muted);
-    margin: 0 0 2rem;
-    max-width: 520px;
 }
 
 .contact-info {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
     gap: 2rem;
+    font-style: normal;
 }
 
 .contact-item h3 {
@@ -34,11 +35,18 @@
     color: var(--accent);
     text-decoration: none;
     font-weight: 500;
-    transition: text-decoration var(--transition-default);
+    overflow-wrap: anywhere;
+    transition: color var(--transition-default);
 }
 
 .contact-item a:hover {
+    color: var(--text);
     text-decoration: underline;
+}
+
+.contact-item a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
 }
 
 .contact-item p {
@@ -50,6 +58,6 @@
 
 .social-links {
     display: flex;
-    gap: 1rem;
     flex-wrap: wrap;
+    gap: 1rem;
 }

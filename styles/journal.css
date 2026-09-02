@@ -26,7 +26,10 @@
     background-color: var(--background-alt);
     border: 1px solid var(--border);
     border-radius: var(--radius-default);
-    transition: transform var(--transition-default), box-shadow var(--transition-default), border-color var(--transition-default);
+    transition:
+        transform var(--transition-default),
+        box-shadow var(--transition-default),
+        border-color var(--transition-default);
 }
 
 .journal-entry.featured {
@@ -57,7 +60,23 @@
     color: var(--text);
 }
 
+.journal-entry h3 a {
+    color: inherit;
+    text-decoration: none;
+}
+
+.journal-entry h3 a:hover {
+    text-decoration: underline;
+    text-underline-offset: 0.2em;
+}
+
+.journal-entry h3 a:focus-visible {
+    outline: 2px solid var(--accent);
+    outline-offset: 4px;
+}
+
 .entry-date {
+    display: block;
     margin: 0 0 1rem;
     font-size: 0.75rem;
     text-transform: uppercase;
@@ -76,5 +95,15 @@
     .journal-layout {
         grid-template-columns: 1fr;
         gap: 2rem;
+    }
+}
+
+@media (prefers-reduced-motion: reduce) {
+    .journal-entry {
+        transition: none;
+    }
+
+    .journal-entry:hover {
+        transform: none;
     }
 }
