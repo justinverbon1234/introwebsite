@@ -63,7 +63,7 @@
 .hero-lastname {
     margin-left: clamp(3rem, 12vw, 8rem);
     font-size: clamp(6rem, 16vw, 14rem);
-    font-weight: 100;
+    font-weight: 600;
     line-height: 0.75;
     letter-spacing: -0.1em;
 }
