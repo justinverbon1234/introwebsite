@@ -1,14 +1,3 @@
-.about,
-.journal,
-.contact {
-    min-height: 100vh;
-    padding: 2rem 1rem;
-    border-top: 1px solid var(--border);
-    display: flex;
-    flex-direction: column;
-    justify-content: space-between;
-}
-
 .about-layout {
     display: grid;
     grid-template-columns: 1.1fr 0.9fr;
@@ -115,5 +104,9 @@
 
     .about-visual::before {
         display: none;
+    }
+
+    .about-visual img {
+        height: 420px;
     }
 }

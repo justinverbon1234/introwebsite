@@ -6,10 +6,12 @@
     --background-alt: #EAE6DE;
 
     --text: #171715;
-    --text-muted: #77736B;
+    --text-muted: #6B675F;
 
     --border: #D6D1C8;
     --accent: #681F2A;
+
+    --header-height: 70px;
 
     --transition-default: 300ms ease;
     --transition-slow: 700ms ease;

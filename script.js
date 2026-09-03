@@ -34,6 +34,8 @@ const journalItems = document.querySelectorAll('.journal-item');
 journalItems.forEach((item) => {
     const toggle = item.querySelector('.journal-toggle');
 
+    if (!toggle) return;
+
     toggle.addEventListener('click', () => {
         journalItems.forEach((journalItem) => {
             journalItem.classList.remove('active');
@@ -46,42 +48,5 @@ journalItems.forEach((item) => {
 
         item.classList.add('active');
         toggle.setAttribute('aria-expanded', 'true');
-    });
-});
-
-const archiveFilters = document.querySelectorAll('.archive-filter');
-const archiveEntries = document.querySelectorAll('.archive-entry');
-const archiveEmpty = document.querySelector('.archive-empty');
-
-archiveFilters.forEach((filter) => {
-    filter.addEventListener('click', () => {
-        const selectedCategory = filter.dataset.filter;
-
-        archiveFilters.forEach((button) => {
-            const isActive = button === filter;
-
-            button.classList.toggle('active', isActive);
-            button.setAttribute('aria-pressed', isActive.toString());
-        });
-
-        let visibleEntries = 0;
-
-        archiveEntries.forEach((entry) => {
-            const category = entry.dataset.category;
-
-            const shouldShow =
-                selectedCategory === 'all' ||
-                selectedCategory === category;
-
-            entry.hidden = !shouldShow;
-
-            if (shouldShow) {
-                visibleEntries++;
-            }
-        });
-
-        if (archiveEmpty) {
-            archiveEmpty.hidden = visibleEntries !== 0;
-        }
     });
 });
