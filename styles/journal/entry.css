@@ -80,6 +80,12 @@
     color: var(--text);
 }
 
+.entry-intro a {
+    color: inherit;
+    text-decoration-color: var(--accent);
+    text-underline-offset: 0.2em;
+}
+
 .entry-details {
     display: flex;
     flex-direction: column;
@@ -119,6 +125,21 @@
     width: min(680px, 100%);
     margin-left: auto;
     margin-right: clamp(0rem, 8vw, 8rem);
+}
+
+.entry-copy h2 {
+    margin: 6rem 0 2rem;
+
+    font-size: clamp(2rem, 4vw, 3.75rem);
+    font-weight: 500;
+    line-height: 1;
+    letter-spacing: -0.045em;
+
+    color: var(--text);
+}
+
+.entry-copy h2:first-child {
+    margin-top: 0;
 }
 
 .entry-copy > p {
@@ -305,6 +326,10 @@
         font-size: 1rem;
     }
 
+    .entry-copy h2 {
+        margin-top: 4rem;
+    }
+
     .entry-copy blockquote {
         width: 100%;
 
@@ -356,4 +381,3 @@
     }
 
 }
-

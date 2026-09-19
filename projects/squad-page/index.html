@@ -1,0 +1,343 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="A look at the design and development of a static squad page built with HTML, CSS and vanilla JavaScript."
+    >
+
+    <link
+        rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23681F2A'/><text x='50' y='72' font-size='55' font-family='Georgia, serif' fill='%23F3F0E9' text-anchor='middle'>JV</text></svg>"
+    >
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Squad-page project - Justin Verbon">
+    <meta property="og:description" content="A static squad page built with HTML, CSS and vanilla JavaScript.">
+
+    <title>Squad-page project - Justin Verbon</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600&family=The+Nautigal:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../../styles/base.css">
+    <link rel="stylesheet" href="../../styles/components.css">
+    <link rel="stylesheet" href="../../styles/layout.css">
+    <link rel="stylesheet" href="../../styles/project.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header class="site-header">
+
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a
+                class="brand"
+                href="../../index.html#home"
+                aria-label="Justin Verbon - Home"
+            >
+                JV
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../../index.html#home">Home</a></li>
+                <li><a href="../../index.html#about">Justin</a></li>
+                <li>
+                    <a href="../../journal.html" aria-current="page">
+                        Journal
+                    </a>
+                </li>
+                <li><a href="../../index.html#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main id="main-content">
+
+        <article class="project" aria-labelledby="project-title">
+
+            <header class="project-hero">
+
+                <div class="project-topline">
+                    <p>Project / 05</p>
+                    <time datetime="2026-09-19">19.09.26</time>
+                </div>
+
+                <div class="project-heading">
+                    <p class="project-eyebrow">Design and development</p>
+
+                    <h1 id="project-title">
+                        Squad-page project
+                    </h1>
+                </div>
+
+                <div class="project-intro">
+
+                    <p>
+                        This is a project I worked on for a squad page. I first
+                        made two sketches and then started building the website.
+                        It is a static site made with HTML, CSS and vanilla
+                        JavaScript, with no framework required.
+                    </p>
+
+                    <dl class="project-details">
+                        <div>
+                            <dt>Stack</dt>
+                            <dd>HTML / CSS / JavaScript</dd>
+                        </div>
+
+                        <div>
+                            <dt>Type</dt>
+                            <dd>Static website</dd>
+                        </div>
+                    </dl>
+
+                </div>
+
+            </header>
+
+
+            <section class="project-section project-home" aria-labelledby="home-title">
+
+                <header class="project-section-heading">
+                    <p>01 / Homepage</p>
+                    <h2 id="home-title">A.M.S</h2>
+                </header>
+
+                <a
+                    class="project-figure-link"
+                    href="https://justinverbon1234.github.io/your-tribe-squad-page/"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    aria-label="Open the live Squad-page website"
+                >
+                    <figure class="project-figure project-figure-wide">
+                        <img
+                            src="../../images/projects/squad-page/homepage.png"
+                            alt="The A.M.S homepage with a dark burgundy and blue gradient and a large A.M.S title"
+                            width="669"
+                            height="355"
+                        >
+
+                        <figcaption>
+                            <span>The homepage</span>
+                            <span>View the live project ↗</span>
+                        </figcaption>
+                    </figure>
+                </a>
+
+                <div class="project-copy">
+                    <p>
+                        This is the home screen. On the actual website, the
+                        large A.M.S title has a typewriter effect. The image
+                        above links directly to the finished site, so you can
+                        see the interaction for yourself.
+                    </p>
+
+                    <p>
+                        Because the website is static, I did not have to worry
+                        about credentials or add a framework to the project.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="project-section" aria-labelledby="constellation-title">
+
+                <header class="project-section-heading">
+                    <p>02 / Constellations</p>
+                    <h2 id="constellation-title">Exploring the squad</h2>
+                </header>
+
+                <figure class="project-figure project-figure-wide">
+                    <img
+                        src="../../images/projects/squad-page/constellation-overview.png"
+                        alt="The main constellation view with Lyra, Nexus, Vela, Aurora and Orbit placed across a dark gradient"
+                        width="883"
+                        height="469"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <figcaption>
+                        <span>Main constellation view</span>
+                        <span>Hovering over Lyra reveals its members</span>
+                    </figcaption>
+                </figure>
+
+                <div class="project-copy project-copy-right">
+                    <p>
+                        The main view is made up of constellation groups. When
+                        you hover over one of them, like Lyra in this image, a
+                        smaller constellation appears with the names of its
+                        members.
+                    </p>
+
+                    <p>
+                        Each name is clickable. Selecting one takes you into
+                        the corresponding constellation, where the members are
+                        shown individually.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="project-section" aria-labelledby="member-title">
+
+                <header class="project-section-heading">
+                    <p>03 / Member view</p>
+                    <h2 id="member-title">Inside a constellation</h2>
+                </header>
+
+                <figure class="project-figure project-figure-wide">
+                    <img
+                        src="../../images/projects/squad-page/member-constellation.png"
+                        alt="An individual constellation showing eight member names and a Universe control"
+                        width="1158"
+                        height="613"
+                        loading="lazy"
+                        decoding="async"
+                    >
+
+                    <figcaption>
+                        <span>Individual constellation view</span>
+                        <span>Eight members in Lyra</span>
+                    </figcaption>
+                </figure>
+
+                <div class="project-copy">
+                    <p>
+                        Inside a constellation, everything is still clickable.
+                        Hovering over a member reveals a preview of the project
+                        connected to that person.
+                    </p>
+
+                    <p>
+                        The Universe control takes you back to the previous
+                        constellation view, so you can continue exploring the
+                        other groups.
+                    </p>
+                </div>
+
+            </section>
+
+
+            <section class="project-section project-process" aria-labelledby="process-title">
+
+                <header class="project-section-heading">
+                    <p>04 / Process</p>
+                    <h2 id="process-title">Earlier directions</h2>
+                </header>
+
+                <div class="project-gallery">
+
+                    <figure class="project-figure project-figure-strip">
+                        <img
+                            src="../../images/projects/squad-page/early-project-layouts.png"
+                            alt="A wide strip of early project-card layouts, a colour palette and type notes"
+                            width="1430"
+                            height="134"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
+                        <figcaption>
+                            <span>Early project layouts</span>
+                            <span>Colour and type exploration</span>
+                        </figcaption>
+                    </figure>
+
+                    <figure class="project-figure project-figure-process">
+                        <img
+                            src="../../images/projects/squad-page/early-page-concepts.png"
+                            alt="Early page concepts for the hero, work, spots, footer and style guide"
+                            width="739"
+                            height="546"
+                            loading="lazy"
+                            decoding="async"
+                        >
+
+                        <figcaption>
+                            <span>One of the first designs</span>
+                            <span>Page and style-guide sketches</span>
+                        </figcaption>
+                    </figure>
+
+                </div>
+
+                <div class="project-copy project-copy-right">
+                    <p>
+                        These are some of my first designs. They changed quite
+                        a lot before the final version, but that is what design
+                        is about: it rarely works the first time.
+                    </p>
+
+                    <p>
+                        In this case, the projects section was the part that
+                        changed. I liked the rest of the direction, so I kept
+                        it and continued refining the work from there.
+                    </p>
+
+                    <p>That is all for now. Until next time.</p>
+                </div>
+
+            </section>
+
+
+            <footer class="project-footer">
+
+                <div class="project-footer-meta">
+                    <p>End of project</p>
+                    <p>Project / 05</p>
+                </div>
+
+                <nav class="project-navigation" aria-label="Project navigation">
+
+                    <a class="project-back" href="../../journal.html">
+                        <span aria-hidden="true">←</span>
+                        <span>Back to Journal</span>
+                    </a>
+
+                    <a
+                        class="project-live"
+                        href="https://justinverbon1234.github.io/your-tribe-squad-page/"
+                        target="_blank"
+                        rel="noopener noreferrer"
+                    >
+                        <span>
+                            View live project
+                            <small>Squad-page</small>
+                        </span>
+                        <span aria-hidden="true">↗</span>
+                    </a>
+
+                </nav>
+
+            </footer>
+
+        </article>
+
+    </main>
+
+</body>
+
+</html>

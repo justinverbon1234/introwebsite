@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <meta
+        name="description"
+        content="A two-week look at designing and building a squad page, from early sketches to a functioning responsive website."
+    >
+
+    <link
+        rel="icon"
+        href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><rect width='100' height='100' fill='%23681F2A'/><text x='50' y='72' font-size='55' font-family='Georgia, serif' fill='%23F3F0E9' text-anchor='middle'>JV</text></svg>"
+    >
+
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Squad-page - Justin Verbon">
+    <meta property="og:description" content="A two-week look at designing and building a squad page, from early sketches to a functioning responsive website.">
+    <meta property="og:image" content="../images/IMG_4485.jpeg">
+
+    <title>Squad-page - Justin Verbon</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:wght@100;400;500;600&family=The+Nautigal:wght@400;700&display=swap"
+        rel="stylesheet"
+    >
+
+    <link rel="stylesheet" href="../styles/base.css">
+    <link rel="stylesheet" href="../styles/components.css">
+    <link rel="stylesheet" href="../styles/layout.css">
+    <link rel="stylesheet" href="../styles/journal/entry.css">
+</head>
+
+<body>
+
+    <a class="skip-link" href="#main-content">
+        Skip to main content
+    </a>
+
+    <header class="site-header">
+
+        <nav class="navbar" aria-label="Main navigation">
+
+            <a
+                class="brand"
+                href="../index.html#home"
+                aria-label="Justin Verbon - Home"
+            >
+                JV
+            </a>
+
+            <ul class="nav-links">
+                <li><a href="../index.html#home">Home</a></li>
+                <li><a href="../index.html#about">Justin</a></li>
+                <li>
+                    <a href="../journal.html" aria-current="page">Journal</a>
+                </li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+
+        </nav>
+
+    </header>
+
+
+    <main id="main-content">
+
+        <article class="entry" aria-labelledby="entry-title">
+
+            <header class="entry-hero">
+
+                <div class="entry-topline">
+                    <p>Thought / 04</p>
+                    <time datetime="2026-09-19">19.09.26</time>
+                </div>
+
+                <div class="entry-heading">
+                    <p class="entry-eyebrow">Design and development</p>
+                    <h1 id="entry-title">Squad-page</h1>
+                </div>
+
+                <div class="entry-intro">
+
+                    <p>
+                        The first couple of days I was mainly busy making an
+                        actual design for the
+                        <a
+                            href="https://justinverbon1234.github.io/your-tribe-squad-page/"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                        >website</a>
+                        (see link, I hope you like it). But now that we have the
+                        introduction out of the way, let me walk you through
+                        what happened this week.
+                    </p>
+
+                    <div class="entry-details">
+                        <span>Written by Justin Verbon</span>
+                        <span>Two-week sprint</span>
+                    </div>
+
+                </div>
+
+            </header>
+
+
+            <div class="entry-body">
+
+                <div class="entry-copy">
+
+                    <h2>Week 1</h2>
+
+                    <p>
+                        I started by making a design and discussing it with my
+                        team. Before touching too much code, I wanted us to have
+                        at least some idea of what we were building. While doing
+                        that I also made four initial sketches of the website.
+                        They all looked quite different from what you see now,
+                        but that was kind of the point. I wanted to try a few
+                        directions first instead of immediately committing to
+                        the first idea that came to mind.
+                    </p>
+
+                    <p>
+                        Eventually we landed on the current direction and
+                        started turning that into an actual website. By the time
+                        Thursday came around we already had a fully functioning
+                        prototype.
+                    </p>
+
+                    <p>
+                        One of the first things I worked on was the overall
+                        structure of the page. The website is divided into a few
+                        main sections: the hero, selected work, local spots and
+                        eventually a footer. I wanted the website to feel like
+                        something you explore instead of just another portfolio
+                        where everything is placed into a predictable grid.
+                    </p>
+
+                    <p>
+                        That became especially important for the Selected Work
+                        section. At first, I experimented with a few different
+                        ideas, including things like tabs and masks, but those
+                        versions started making the section more complicated
+                        without really making it better. Eventually I went back
+                        to a simpler alternating layout, where the projects
+                        switch sides as you move down the page.
+                    </p>
+
+                    <p>
+                        I also added reflections underneath some of the project
+                        images. It is a small detail, but it gives the images a
+                        little more depth and makes them feel less like flat
+                        rectangles sitting on a page. I didn't want to go too
+                        far with the 3D effect either. The goal was more to
+                        create the illusion that the work has some physical
+                        presence without making it distracting.
+                    </p>
+
+                    <p>
+                        For the background I went with a mixture of burgundy,
+                        purple and blue. Instead of using one flat background
+                        colour, I wanted something that felt a little more
+                        atmospheric. It also helped connect the different parts
+                        of the website because the colour continues throughout
+                        the page even when the layouts themselves change.
+                    </p>
+
+                    <p>Then there is the Spots section.</p>
+
+                    <p>
+                        This part of the website is meant to show local
+                        locations instead of projects, so I wanted it to behave
+                        differently as well. Rather than showing another grid of
+                        images, I created an infinite carousel. The photos
+                        continuously move across the screen, and when you
+                        interact with them you can get more information about
+                        the individual spot.
+                    </p>
+
+                    <p>
+                        I like this section because it gives the website a
+                        different rhythm. The project section is much more
+                        structured, while Spots feels more like browsing through
+                        a collection.
+                    </p>
+
+                    <p>
+                        I also started adding some small animations throughout
+                        the website. Most of these are simple scroll reveals
+                        using IntersectionObserver. I deliberately kept these
+                        subtle because I don't want the website to become one of
+                        those sites where everything flies onto the screen just
+                        because it can.
+                    </p>
+
+                    <p>
+                        There was also quite a bit of work that wasn't
+                        immediately visible.
+                    </p>
+
+                    <p>
+                        I spent some time cleaning up the HTML, CSS and
+                        JavaScript and making the structure a little more
+                        modular. I also started working on the responsive version
+                        of the website. Some layouts that work well on a large
+                        screen obviously don't translate directly to mobile, so
+                        instead of just shrinking everything I started thinking
+                        about how those sections should change.
+                    </p>
+
+                    <p>
+                        I also added support for prefers-reduced-motion, so
+                        people who have reduced motion enabled don't have to sit
+                        through all the animations.
+                    </p>
+
+                    <p>
+                        In terms of learning HTML and CSS this week, there wasn't
+                        a huge amount that was completely new to me. As you know,
+                        I already have the needed experience, so building things
+                        like the navigation, layouts and responsive behavior
+                        wasn't that much of a task for me.
+                    </p>
+
+                    <p>That doesn't mean the week was useless though.</p>
+
+                    <p>
+                        Most of the challenge was in making design decisions and
+                        then figuring out whether those ideas still worked once
+                        they existed in an actual browser. Something can look
+                        great in a sketch or prototype and then suddenly feel
+                        completely wrong once you can scroll through it and
+                        interact with it.
+                    </p>
+
+                    <p>
+                        I also worked with CSS Grid again later in the week. I
+                        can't really say I learned anything groundbreaking from
+                        it because it is something I have already used before,
+                        but it was still useful for building some of the layouts.
+                    </p>
+
+                    <p>
+                        By the end of the week the website was already much
+                        further along than the original sketches. The main
+                        structure works, the project section has a clear
+                        direction, the Spots carousel is functional, and the
+                        overall visual style is starting to feel consistent.
+                    </p>
+
+                    <p>
+                        There are still things I want to change. The footer, for
+                        example, still needs some actual attention, and I'm sure
+                        some of the current sections will change again once we
+                        continue working on the site.
+                    </p>
+
+                    <p>But that is probably my biggest takeaway from this week.</p>
+
+                    <blockquote>
+                        The first design is almost never the final design.
+                    </blockquote>
+
+                    <p>
+                        So, week one: a lot of designing, a lot of CSS, a few
+                        ideas thrown away, and one functioning website.
+                    </p>
+
+                    <p>Not a bad start.</p>
+
+                    <h2>Week 2</h2>
+
+                    <p>
+                        Week 2 was mainly focused on refining the website
+                        because on Friday we had an “Expo”, where we showed the
+                        work we did over the past two weeks.
+                    </p>
+
+                    <p>
+                        Overall, it was a great two-week sprint. Even though I
+                        already knew a lot of things, I still learned a lot. For
+                        example, one of my team members simply stopped coming
+                        and responding, so we had to adapt on the spot as well.
+                    </p>
+
+                    <p>
+                        As for the design I previously talked about, we stuck
+                        with our first design since that was the best we had. So
+                        in this case, it was in fact our final design.
+                    </p>
+
+                    <p>
+                        Until next time friends, hugs and kisses xoxo.
+                    </p>
+
+                </div>
+
+            </div>
+
+
+            <footer class="entry-footer">
+
+                <div class="entry-footer-meta">
+                    <p>End of Entry</p>
+                    <p>Thought / 04</p>
+                </div>
+
+                <nav
+                    class="entry-navigation"
+                    aria-label="Journal entry navigation"
+                >
+
+                    <a class="entry-back" href="art-fashion-tech.html">
+                        <span aria-hidden="true">←</span>
+                        <span>Previous Entry</span>
+                    </a>
+
+                    <a class="entry-next" href="../journal.html">
+                        <span>
+                            Back to Journal
+                            <small>Latest Entries</small>
+                        </span>
+                        <span aria-hidden="true">↑</span>
+                    </a>
+
+                </nav>
+
+            </footer>
+
+        </article>
+
+    </main>
+
+</body>
+
+</html>
