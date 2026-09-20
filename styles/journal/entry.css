@@ -209,14 +209,15 @@
 /* Entry navigation */
 
 .entry-navigation {
-    display: grid;
-    grid-template-columns: 1fr 1fr;
+    display: flex;
+    justify-content: space-between;
+    align-items: stretch;
 
     border-top: 1px solid var(--border);
 }
 
 .entry-navigation a {
-    min-height: 160px;
+    min-height: 56px;
 
     display: flex;
     align-items: center;
@@ -226,13 +227,12 @@
 
     transition:
         color var(--transition-default),
-        padding var(--transition-default);
+        transform var(--transition-default);
 }
 
-.entry-back {
-    gap: 1rem;
-
-    border-right: 1px solid var(--border);
+.entry-back,
+.entry-next {
+    gap: 0.75rem;
 
     font-size: 0.72rem;
     font-weight: 500;
@@ -241,43 +241,15 @@
 }
 
 .entry-next {
-    justify-content: space-between;
-    gap: 2rem;
-
-    padding-left: 3rem;
-
-    text-align: left;
-}
-
-.entry-next > span:first-child {
-    display: flex;
-    flex-direction: column;
-    gap: 0.4rem;
-
-    font-size: 0.68rem;
-    text-transform: uppercase;
-    letter-spacing: 0.12em;
-
-    color: var(--text-muted);
-}
-
-.entry-next small {
-    max-width: 400px;
-
-    font-size: clamp(1rem, 2vw, 1.4rem);
-    font-weight: 500;
-    text-transform: none;
-    letter-spacing: -0.02em;
-
-    color: var(--text);
+    margin-left: auto;
 }
 
 .entry-back:hover {
-    padding-left: 0.5rem;
+    transform: translateX(-0.25rem);
 }
 
 .entry-next:hover {
-    padding-left: 3.5rem;
+    transform: translateX(0.25rem);
 }
 
 .entry-navigation a:focus-visible {
@@ -344,24 +316,12 @@
     }
 
     .entry-navigation {
-        grid-template-columns: 1fr;
+        justify-content: flex-start;
     }
 
-    .entry-navigation a {
-        min-height: 120px;
-    }
-
-    .entry-back {
-        border-right: 0;
-        border-bottom: 1px solid var(--border);
-    }
-
+    .entry-back,
     .entry-next {
-        padding-left: 0;
-    }
-
-    .entry-next:hover {
-        padding-left: 0.5rem;
+        min-height: 56px;
     }
 
 }
@@ -377,7 +337,7 @@
 
     .entry-back:hover,
     .entry-next:hover {
-        padding-left: 0;
+        transform: none;
     }
 
 }
